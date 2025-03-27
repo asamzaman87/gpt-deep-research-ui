@@ -1,0 +1,35 @@
+{
+  "name": "gpt-deep-research-ui-web-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "sort": "npx sort-package-json",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/lab": "5.0.0-alpha.173",
+    "@mui/material": "^5.15.19",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.5"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b"
+}
