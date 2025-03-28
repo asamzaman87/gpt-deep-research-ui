@@ -18,7 +18,7 @@ import Image from "next/image";
 import { ToggleColorMode } from "../toggle-color-mode";
 
 const EXT_URL = {
-  chrome: "https://chromewebstore.google.com/detail/gpt-reader-a-free-chatgpt/aeggkceabpfajnglgaeadofdmeboimml?authuser=0&hl=en",
+  chrome: "https://chromewebstore.google.com/detail/gpt-deep-research-instant/ioahhpkglpiegadnjliggcdbdbbchpmk",
   firefox: "https://addons.mozilla.org/en-US/firefox/addon/gpt-reader/"
 }
 const DownloadUI = () => {
