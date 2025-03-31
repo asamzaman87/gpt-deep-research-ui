@@ -19,7 +19,7 @@ import { ToggleColorMode } from "../toggle-color-mode";
 
 const EXT_URL = {
   chrome: "https://chromewebstore.google.com/detail/gpt-deep-research-instant/ioahhpkglpiegadnjliggcdbdbbchpmk",
-  firefox: "https://addons.mozilla.org/en-US/firefox/addon/gpt-reader/"
+  firefox: "https://addons.mozilla.org/en-US/firefox/addon/gpt-deep-research/"
 }
 const DownloadUI = () => {
   const { mode, toggleTheme } = useThemeContext();
