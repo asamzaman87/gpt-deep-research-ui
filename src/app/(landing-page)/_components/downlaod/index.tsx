@@ -19,7 +19,8 @@ import { ToggleColorMode } from "../toggle-color-mode";
 
 const EXT_URL = {
   chrome: "https://chromewebstore.google.com/detail/gpt-deep-research-instant/ioahhpkglpiegadnjliggcdbdbbchpmk",
-  firefox: "https://addons.mozilla.org/en-US/firefox/addon/gpt-deep-research/"
+  firefox: "https://addons.mozilla.org/en-US/firefox/addon/gpt-deep-research/",
+  edge: "https://microsoftedge.microsoft.com/addons/detail/pjmhonkmjihkljepfjklobmpnajbgpjd",
 }
 const DownloadUI = () => {
   const { mode, toggleTheme } = useThemeContext();
@@ -86,69 +87,82 @@ const DownloadUI = () => {
               </Typography>
 
               <Box
-                py={3}
-                display={"flex"}
-                width={"100%"}
-                alignItems={"center"}
-                gap={1}
-              >
-                <Button
-                  href={EXT_URL.chrome}
-                  target="_blank"
-                  color="success"
-                  variant={"contained"}
-                  sx={{
-                    width: { md: "320px", xs: "100%" },
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 2,
-                    fontWeight: 700,
-                    color: "#fff",
-                    height: "fit-content",
-                  }}
-                >
-                  <Image
-                    src="/images/chrome.png"
-                    alt="chrome"
-                    width={20}
-                    height={20}
-                  />
-                  GET EXTENSION FOR CHROME
-                </Button>
+  py={3}
+  display="flex"
+  flexDirection="column"
+  alignItems="center"
+  width="100%"
+  gap={2}
+>
+  <Box
+    display="flex"
+    justifyContent="center"
+    flexWrap="wrap"
+    gap={2}
+    width="100%"
+  >
+    <Button
+      href={EXT_URL.chrome}
+      target="_blank"
+      color="success"
+      variant="contained"
+      sx={{
+        width: { md: "320px", xs: "100%" },
+        display: "flex",
+        textTransform: 'uppercase',
+        alignItems: "center",
+        gap: 2,
+        fontWeight: 700,
+        color: "#fff",
+        height: "fit-content",
+      }}
+    >
+      <Image src="/images/chrome.png" alt="chrome" width={20} height={20} />
+      GET EXTENSION FOR CHROME
+    </Button>
 
-                <Button
-                  href={EXT_URL.firefox}
-                  target="_blank"
-                  color="success"
-                  variant={"contained"}
-                  sx={{
-                    width: { md: "320px", xs: "100%" },
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 1,
-                    fontWeight: 700,
-                    color: "#fff",
-                    height: "fit-content",
-                  }}
-                >
-                  <Image
-                    src="/images/firefox.png"
-                    alt="firefox"
-                    width={20}
-                    height={20}
-                  />
-                  GET EXTENSION FOR FIREFOX
-                </Button>
-                {/* <Box ml={2}>
-                  <Rating
-                    name="read-only"
-                    value={selected?.rating}
-                    readOnly
-                    size="large"
-                  />
-                  <p> {selected?.ratingText}</p>
-                </Box> */}
-              </Box>
+    <Button
+      href={EXT_URL.firefox}
+      target="_blank"
+      color="success"
+      variant="contained"
+      sx={{
+        textTransform: 'uppercase',
+        width: { md: "320px", xs: "100%" },
+        display: "flex",
+        alignItems: "center",
+        gap: 1,
+        fontWeight: 700,
+        color: "#fff",
+        height: "fit-content",
+      }}
+    >
+      <Image src="/images/firefox.png" alt="firefox" width={20} height={20} />
+      GET EXTENSION FOR FIREFOX
+    </Button>
+  </Box>
+
+  <Button
+    href={EXT_URL.edge}
+    target="_blank"
+    color="success"
+    variant="contained"
+    sx={{
+      textTransform: 'uppercase',
+      width: { md: "320px", xs: "100%" },
+      display: "flex",
+      alignItems: "center",
+      gap: 1,
+      fontWeight: 700,
+      color: "#fff",
+      height: "fit-content",
+    }}
+  >
+    <Image src="/images/edge.png" alt="edge" width={20} height={20} />
+    GET EXTENSION FOR EDGE
+  </Button>
+</Box>
+
               
                 <Alert sx={{ mb: 2 }} severity="info">Note: The extension may not work consistently work for you due to a ChatGPT update. If this is the case for you, then expect it to be resolved in the coming days.</Alert>
               
